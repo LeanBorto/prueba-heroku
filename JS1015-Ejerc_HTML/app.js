@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const port = process.env.PORT || 3000
 
 app.use(express.static('public'));
 
@@ -24,6 +25,4 @@ app.get('/login', (req, res) => {
     res.sendFile(archivo);
 });
 
-app.listen(3030, () => {
-    console.log("Bien ahí");
-}); 
+app.listen(port, () => console.log("corriendo en puerto " + port));
