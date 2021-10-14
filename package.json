@@ -1,0 +1,18 @@
+{
+  "name": "ejerc_html",
+  "version": "1.0.0",
+  "description": "Ejercicio de HTML",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeanBorto/prueba-heroku.git"
+  },
+  "author": "Leandro Bortoluzzi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
