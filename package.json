@@ -6,9 +6,7 @@
   "scripts": {
     "start": "nodemon app.js"
   },
- 
- 
-  "author": "Leandro Bortoluzzi",
+   "author": "Leandro Bortoluzzi",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
