@@ -6,11 +6,7 @@
   "scripts": {
     "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LeanBorto/prueba-heroku1.git"
-  },
-   "author": "Leandro Bortoluzzi",
+  "author": "Leandro Bortoluzzi",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
