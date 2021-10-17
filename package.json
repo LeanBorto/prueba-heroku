@@ -4,7 +4,7 @@
   "description": "Ejercicio de HTML",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodem app.js"
   },
   "author": "Leandro Bortoluzzi",
   "license": "ISC",
