@@ -25,6 +25,6 @@ app.get('/login', (req, res) => {
     res.sendFile(archivo);
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("El servidor esta corriendo");
 }); 
