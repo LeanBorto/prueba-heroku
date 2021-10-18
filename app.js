@@ -1,30 +1,22 @@
-const express = require('express');
-const app = express();
+const express = require ('express');
 const path = require('path');
-const port = process.env.PORT || 3000
+const app = express();
 
-app.use(express.static('public'));
+const publicPath = path.resolve(__dirname, './public');
+app.use(express.static(publicPath));
 
-app.get('/', (req, res) => {
-    const archivo = path.join(__dirname, './views/home.html')
-    res.sendFile(archivo);
+app.listen(process.env.PORT || 3030,  function()  {
+    console.log("Levantando un servidor con Express")
 });
 
-app.get('/register', (req, res) => {
-    const archivo = path.join(__dirname, './views/register.html')
-    res.sendFile(archivo);
+app.get('/',(req,res) => {
+    res.sendFile(path.resolve(__dirname, './views/home.html'))
 });
 
-app.post('/register', (req, res) => {
-    req.body;
-    res.redirect('/');
+app.get('/login', (req,res)=>{
+    res.sendFile(__dirname + '/views/login.html');
 });
 
-app.get('/login', (req, res) => {
-    const archivo = path.join(__dirname, './views/login.html')
-    res.sendFile(archivo);
+app.get('/register', (req,res)=>{
+    res.sendFile(__dirname + '/views/register.html');
 });
-
-app.listen(port, () => {
-    console.log("El servidor esta corriendo");
-}); 
